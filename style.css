@@ -1,0 +1,101 @@
+*,
+html,
+body{
+    margin:0;
+    padding: 0;
+}
+    
+:root{
+    --bg-primary : aqua;
+    --text-primary : black;
+    --bg-secondary : #3a3636;
+    --text-secondary : white;
+}
+
+.container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-color: var(--bg-primary);
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+
+.card{
+    height: 10em;
+    text-align: center;
+    width: 20em;
+    padding: 45px;
+    margin: 15px;
+    margin-top: 20px;
+    background-color:var(--bg-secondary);
+    color: var(--text-secondary);
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 3px black;
+}
+
+.title{
+    font-size: 35px;
+}
+
+i{
+    margin-top: 10px;
+    font-size: 3em;
+    border: none;
+}
+
+#insta{
+    color: tomato;
+}
+
+#twitter{
+    color: rgb(15, 147, 223);
+}
+
+#youtube{
+    color: rgb(199, 10, 10);
+}
+
+#linkedin{
+    color: rgb(11, 11, 228);
+}
+
+.desc{
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--text-secondary);
+}
+
+.btn{
+    font-weight: 700;
+    padding: 8px;
+    margin-top: 20px;
+    cursor:pointer;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+
+   
+}
+
+.btn:hover{
+    background-color: rgb(62, 79, 238);
+    color: var(--text-secondary);
+    transition: .2s ease-in-out;
+    border: 2px solid black;
+}
+
+@media screen and (max-width: 476px){
+    .card{
+        width: 80%;
+    }
+}
+
